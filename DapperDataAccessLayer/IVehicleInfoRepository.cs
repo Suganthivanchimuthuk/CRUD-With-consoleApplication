@@ -8,7 +8,7 @@ namespace DapperDataAccessLayer
 {
     public interface IVehicleInfoRepository
     {
-        public VehicleInfo InsertSP(VehicleInfo vehicleInfo);
+        public VehicleInfo InsertSP(VehicleInfo VehicleInfo);
         public IEnumerable<VehicleInfo> GetVehicleInfoSP();
         public VehicleInfo UpdateVehicleInfoSP(long Id, VehicleInfo P);
 

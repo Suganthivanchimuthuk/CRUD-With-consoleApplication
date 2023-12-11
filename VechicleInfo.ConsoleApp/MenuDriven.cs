@@ -19,6 +19,7 @@ namespace VechicleInfo.ConsoleApp
         public void menu()
         {
             int option = 0;
+            do
 
             
             {
@@ -71,7 +72,7 @@ namespace VechicleInfo.ConsoleApp
                             VI.RCNumber = Console.ReadLine();
 
                             Console.WriteLine("Enter OwnerPhNo");
-                            VI.OwnerPhNo = Convert.ToInt32(Console.ReadLine());
+                            VI.OwnerPhNo = Convert.ToInt64(Console.ReadLine());
 
                             Console.WriteLine("Enter PurchaseDate ");
                             VI.PurchaseDate = DateTime.Today;
@@ -124,7 +125,7 @@ namespace VechicleInfo.ConsoleApp
                 }
 
 
-            }
+            }while (5 != option) ;
            
 
 

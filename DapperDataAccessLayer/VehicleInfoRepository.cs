@@ -94,6 +94,7 @@ namespace DapperDataAccessLayer
                 con.Open();
                 var UpdateQuery = $"exec  VehicleInfoUpdate {id},'{VI.Name}',{VI.VehicleNumber},{VI.RCNumber},{VI.OwnerPhNo},'{VI.PurchaseDate.ToString("MM-dd-yyyy")}'";
                 var VehicleInfo = con.QueryFirstOrDefault<VehicleInfo>(UpdateQuery);
+                Console.WriteLine(UpdateQuery);
                 con.Close();
                 return VehicleInfo;
 
